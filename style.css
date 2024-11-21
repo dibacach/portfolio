@@ -10,6 +10,14 @@ html{
     color: var(--color-secundario);
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 a{
     text-decoration: none;
     color: var(--color-secundario);
@@ -39,7 +47,6 @@ h6{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
-    display: none;
 }
 
 .icono {
@@ -50,11 +57,15 @@ h6{
 
 .presentation{
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
 }
 
 .presentation-image{
-    width: 100px;
+    width: 350px;
+}
+
+.presentation-text-title{
+    font-size: 50px;
 }
 
 .about{
@@ -72,16 +83,15 @@ h6{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
-    padding-left: 0px;
+    justify-content: left;
+    padding-left: 80px;
 }
 
 .skills-list li{
     background-color: var(--color-terciario);
-    width: 150px;
-    height: 100px;
+    width: 170px;
+    height: 170px;
 }
-
 
 .hobbies{
     text-align: center;
@@ -92,19 +102,20 @@ h6{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
-    padding-left: 0px;
+    justify-content: left;
+    padding-left: 80px;
 }
 
 .hobbies-list li {
     background-color: var(--color-terciario);
-    width: 150px;
-    height: 100px;
+    width: 170px;
+    height: 170px;
 }
 
 .education{
     background-color: var(--color-principal);
     padding: 5px 16px 5px 16px;
+    text-align: center;
 }
 
 .education-list {
@@ -113,14 +124,15 @@ h6{
     flex-wrap: wrap;
     gap: 20px;
     justify-content: left;
-    padding-left: 0px;
+    padding-left: 70px;
 }
 
 .education-list li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 368px;
+    
 }
 
 .education-list-element{
@@ -128,7 +140,7 @@ h6{
     justify-content: center;
     align-items: center;
     background-color: var(--color-terciario);
-    height: 100px;
+    height: 286px;
 }
 
 .education-list-element img {
@@ -139,6 +151,7 @@ h6{
 .projects{
     margin: 0px -6.7px -6.7px -6.7px;
     padding: 5px 16px 5px 16px;
+    text-align: center;
 }
 
 .projects-list {
@@ -150,29 +163,57 @@ h6{
     padding-left: 0px;
 }
 
-.projects-list li {
+.projects-list-impar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     width: 100%;
 }
 
+.projects-list-impar .projects-list-element-2 {
+    margin-left: 10px;
+}
+
+.projects-list-par {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
+}
+
+.projects-list-par .projects-list-element {
+    margin-left: 10px;
+}
+
 .projects-list-element {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 280px;
+    overflow: hidden;
+}
+
+.projects-list-element-2{
+    text-align: left;
 }
 
 .projects-list-element img {
     width: 100%;
     height: auto;
+    max-width: 500px;
 }
 
 .contact{
     background-color: var(--color-principal);
     margin: 0px -6.7px -6.7px -6.7px;
     padding: 5px 16px 5px 16px;
+    display: flex;
+}
+
+.contact-text{
+    width: 100vh;
+    padding-left: 10px;
 }
 
 .contact-form{
@@ -184,12 +225,6 @@ h6{
     margin: 10px 20px;
     min-height: 32px;
  }
-
-.projects-list-botonera{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 10px;
-}
 
 .btn{
     background-color: #007BFF;
@@ -222,4 +257,150 @@ h6{
 
 .footer-develop{
     margin-bottom: -10px;
+}
+
+@media (max-width: 800px) {
+    .header-nav-list {
+        display: none;
+    }
+
+    .presentation {
+        flex-direction: row-reverse;
+    }
+    
+    .presentation-image {
+        width: 150px;
+    }
+
+    .presentation-text-title {
+        font-size: 1.5em;
+    }
+
+    .skills-list {
+        justify-content: left;
+        padding-left: 30px;
+    }
+    
+    .skills-list li {
+        width: 220px;
+        height: 100px;
+    }
+
+    .hobbies-list {
+        display: flex;
+        justify-content: left;
+        padding-left: 30px;
+    }
+
+    .hobbies-list li {
+        width: 220px;
+        height: 100px;
+    }
+
+    .projects-list li {
+        flex-direction: column;
+    }
+
+    .projects-list-element {
+        height: 300px;
+    }
+
+    .projects-list-element img {
+        max-width: 700px;
+    }
+
+    .education-list {
+        display: flex;
+        justify-content: left;
+        padding-left: 10px;
+    }
+
+    .education-list-element {
+        height: 100px;
+    }
+
+    .education-list li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 220px
+    }
+
+    .contact-text {
+        padding-left: 0px;
+    }
+
+    .contact-image {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-nav-list {
+        display: none;
+    }
+
+    .presentation {
+        flex-direction: column;
+    }
+
+    .presentation-image {
+        width: 100px;
+    }
+
+    .presentation-text-title {
+        font-size: 1.5em;
+    }
+
+    .skills-list {
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+    .skills-list li {
+        width: 150px;
+        height: 100px;
+    }
+
+    .hobbies-list {
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+    .hobbies-list li {
+        width: 150px;
+        height: 100px;
+    }
+
+    .projects-list li{
+        flex-direction: column;
+    }
+
+    .projects-list-element {
+        height: 300px;
+    }
+
+    .projects-list-element img {
+        max-width: 700px;
+    }
+
+    .education-list-element {
+        height: 100px;
+    }
+
+    .education-list li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contact-text {
+        padding-left: 0px;
+    }
+
+    .contact-image{
+        display: none;
+    }
+
 }

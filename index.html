@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="style.css">
+    <title>Perfil Web</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav class="header-nav">
             <h5>Daniel Ibacache</h5>
             <ul class="header-nav-list">
@@ -24,9 +25,10 @@
         <section class="presentation" id="presentation">
             <img src="./assets/images/perfil.png" alt="Perfil" class="presentation-image">
             <div class="presentation-text">
-                <h2>Hola, mi nombre es Daniel Ibacache</h2>
+                <h2 class="presentation-text-title">Hola, mi nombre es Daniel Ibacache</h2>
                 <p>Soy formado en la Universidad Técnica Federico Santa María, Chile.
-                    Mi pasión por la tecnología me ha llevado a formar parte de la comunidad de desarrolladores de software y me he dedicado a aprender y desarrollar nuevas habilidades.</p>
+                    Mi pasión por la tecnología me ha llevado a formar parte de la comunidad de desarrolladores de software y me he dedicado a aprender y desarrollar nuevas habilidades.
+                </p>
             </div>
         </section>
         <section class="about" id="about">
@@ -165,39 +167,51 @@
         <section class="projects" id="projects">
             <h2>Proyectos</h2>
             <ul class="projects-list">
-                <li>
+                <li class="projects-list-impar">
                     <div class="projects-list-element">
                         <img src="./assets/images/portafolio.png" alt="portafolio">
                     </div>
-                    <h4>Portafolio</h4>
-                    <div class="projects-list-botonera">
-                        <button class="btn-secundario">Repositorio</button>
-                        <button class="btn">Ver demo</button>
+                    <div class="projects-list-element-2">
+                        <h4>Portafolio</h4>
+                        <h6>Challenge Oracle</h6>
+                        <div class="projects-list-botonera">
+                            <button class="btn-secundario">Repositorio</button>
+                            <button class="btn">Ver demo</button>
+                        </div>
                     </div>
                 </li>
-                <li>
+                <li class="projects-list-par">
                     <div class="projects-list-element">
                         <img src="./assets/images/encriptador.png" alt="encriptador">
                     </div>
-                    <h4>Encriptador de texto</h4>
-                    <div class="projects-list-botonera">
-                        <button class="btn-secundario" data-repo-encriptador>Repositorio</button>
-                        <button class="btn" data-demo-encriptador>Ver demo</button>
+                    <div class="projects-list-element-2">
+                        <h4>Encriptador de texto</h4>
+                        <h6>Challenge Oracle</h6>
+                        <div class="projects-list-botonera">
+                            <button class="btn-secundario" data-repo-encriptador>Repositorio</button>
+                            <button class="btn" data-demo-encriptador>Ver demo</button>
+                        </div>
                     </div>
                 </li>
             </ul>
         </section>
         <section class="contact" id="contact">
-            <h2>Contacto</h2>
-            <form action="https://formspree.io/f/mgjbzjfj" method="POST" class="contact-form">
-                <input type="text" id="name" name="name" placeholder="Juan Pérez" class="contact-form-element">
-                <input type="email" id="email" name="email" placeholder="juanperez@gmail.com" class="contact-form-element">
-                <input type="text" id="subject" name="subject" placeholder="Asunto" class="contact-form-element">
-                <textarea rows="5" id="message" name="message" placeholder="Mensaje" class="contact-form-element"></textarea>
-                <div class="contact-form-botonera">
-                    <button type="submit" class="btn">Enviar Mensaje</button>
-                </div>
-            </form>
+            <div class="contact-image">
+                <img src="./assets/images/telefono.png" alt="contacto">
+            </div>
+            <div class="contact-text">
+                <h2>Contacto</h2>
+                <p>Si tienes alguna duda, sugerencia o necesitas ayuda, no dudes en contactarme.</p>
+                <form action="https://formspree.io/f/mgjbzjfj" method="POST" class="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Juan Pérez" class="contact-form-element">
+                    <input type="email" id="email" name="email" placeholder="juanperez@gmail.com" class="contact-form-element">
+                    <input type="text" id="subject" name="subject" placeholder="Asunto" class="contact-form-element">
+                    <textarea rows="5" id="message" name="message" placeholder="Mensaje" class="contact-form-element"></textarea>
+                    <div class="contact-form-botonera">
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer class="footer">
