@@ -232,6 +232,7 @@ h6{
     width: 133px;
     height: 40px;
     border: 0px;
+    cursor: pointer;
 }
 
 .btn-secundario{
@@ -240,6 +241,7 @@ h6{
     width: 133px;
     height: 40px;
     border: 1px solid #007BFF;
+    cursor: pointer;
 }
 
 .contact-form-botonera button{
