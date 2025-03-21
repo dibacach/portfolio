@@ -3,43 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title>Portafolio Daniel Ibacache</title>
     <link rel="stylesheet" href="style.css">
-    <title>Perfil Web</title>
 </head>
 <body>
     <header class="header">
         <nav class="header-nav">
-            <h5>Daniel Ibacache</h5>
             <ul class="header-nav-list">
-                <li><a href="#about">Sobre mi</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#education">Formación</a></li>
-                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#about" class="boton-navegacion">Sobre mi</a></li>
+                <li><a href="#skills" class="boton-navegacion">Skills</a></li>
+                <li><a href="#hobbies" class="boton-navegacion">Hobbies</a></li>
+                <li><a href="#education" class="boton-navegacion">Formación</a></li>
+                <li><a href="#projects" class="boton-navegacion">Proyectos</a></li>
+                <li><a href="#contact" class="boton-navegacion">Contacto</a></li>
             </ul>
-            <h5><a href="#contact">dibacach@gmail.com</a></h5>
         </nav>
     </header>
     <main>
         <section class="presentation" id="presentation">
             <img src="./assets/images/perfil.png" alt="Perfil" class="presentation-image">
             <div class="presentation-text">
-                <h2 class="presentation-text-title">Hola, mi nombre es Daniel Ibacache</h2>
-                <p>Soy formado en la Universidad Técnica Federico Santa María, Chile.
-                    Mi pasión por la tecnología me ha llevado a formar parte de la comunidad de desarrolladores de software y me he dedicado a aprender y desarrollar nuevas habilidades.
-                </p>
+                <h1 class="presentation-text-title">Daniel Ibacache</h1>
+                <h2>Analista Desarrollador Senior</h2>
+                <p>Soy formado en la Universidad Técnica Federico Santa María, Chile.</p>
+                <p>Tengo más de 10 años en el desarrollo de software web, con experiencia en lenguajes de programación como JavaScript, HTML, CSS y PHP.</p>
+                <p>En este momento estoy realizando la transición de mi stack tencológico hacia un desarrollo más moderno y eficiente, utilizando tecnologías como Node.js, Express y React.</p>
             </div>
         </section>
         <section class="about" id="about">
             <h2>Sobre mi</h2>
             <p>
-                Vivo en un puebo llamado Olmué en Chile. Me gusta la tranquilidad y la naturaleza de este lugar.
-                <br />
-                Mi pasión por la tecnología me ha llevado a formar parte de la comunidad de desarrolladores de software y me he dedicado a aprender y desarrollar nuevas habilidades con el trascurso de los años.
-                <br />
-                Mi meta es convertirme en un desarrollador de software de clase mundial, que pueda crear software de calidad y con los más altos estándares de seguridad. También quiero mejorar mi habilidad para trabajar en equipo y colaborar con otros desarrolladores.
+                Vivo con mi familia en un puebo llamado Olmué, región de Valparaíso en Chile. Me gusta la tranquilidad y la naturaleza de este lugar.
             </p>
+            <p>
+                Mi pasión por la tecnología me ha llevado a buscar formación como desarrollador de software y me he dedicado a aprender y desarrollar nuevas habilidades con el trascurso de los años.
+            </p>
+            <p>
+                Mi meta es convertirme en un desarrollador muy hábil, que pueda crear software de calidad destacada con gran enfoque en la optimización de rendimiento y seguridad. También quiero mejorar mi habilidad para trabajar en equipo y colaborar con otros desarrolladores.
+            </p>
+        </section>
+        <section class="projects" id="projects">
+            <h2>Proyectos</h2>
+            <ul class="projects-list">
+                <li class="projects-list-impar">
+                    <div class="projects-list-element">
+                        <img src="./assets/images/portafolio.png" alt="aluraflix">
+                    </div>
+                    <div class="projects-list-element-2">
+                        <h4>Alurafix</h4>
+                        <h6>Challenge Oracle</h6>
+                        <p>Una página web para mostrar mi experiencia profesional y mi currículum.</p>
+                        <div class="projects-list-botonera">
+                            <button class="btn-secundario" data-repo-portafolio>Repositorio</button>
+                            <button class="btn" data-demo-portafolio>Ver demo</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="projects-list-impar">
+                    <div class="projects-list-element">
+                        <img src="./assets/images/portafolio.png" alt="alurageek">
+                    </div>
+                    <div class="projects-list-element-2">
+                        <h4>Alurageek</h4>
+                        <h6>Challenge Oracle</h6>
+                        <p>Una página web para mostrar mi experiencia profesional y mi currículum.</p>
+                        <div class="projects-list-botonera">
+                            <button class="btn-secundario" data-repo-portafolio>Repositorio</button>
+                            <button class="btn" data-demo-portafolio>Ver demo</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="projects-list-impar">
+                    <div class="projects-list-element">
+                        <img src="./assets/images/portafolio.png" alt="gif_expert">
+                    </div>
+                    <div class="projects-list-element-2">
+                        <h4>GIF Expert</h4>
+                        <h6>Challenge Oracle</h6>
+                        <p>Una página web para mostrar mi experiencia profesional y mi currículum.</p>
+                        <div class="projects-list-botonera">
+                            <button class="btn-secundario" data-repo-portafolio>Repositorio</button>
+                            <button class="btn" data-demo-portafolio>Ver demo</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="projects-list-impar">
+                    <div class="projects-list-element">
+                        <img src="./assets/images/portafolio.png" alt="encriptador">
+                    </div>
+                    <div class="projects-list-element-2">
+                        <h4>Encriptador de texto</h4>
+                        <h6>Challenge Oracle ONE</h6>
+                        <p>Una página web para mostrar mi experiencia profesional y mi currículum.</p>
+                        <div class="projects-list-botonera">
+                            <button class="btn-secundario" data-repo-encriptador>Repositorio</button>
+                            <button class="btn" data-demo-portafolio>Ver demo</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </section>
         <section class="skills" id="skills">
             <h2>Skills</h2>
@@ -127,6 +189,24 @@
                 </li>
             </ul>
         </section>
+        <section class="education" id="education">
+            <h2>Educación</h2>
+            <ul class="education-list">
+                <li>
+                    <div class="education-list-element">
+                        <img src="./assets/images/alura.webp" class="icono" alt="alura">
+                    </div>
+                    <h4>Frontend Developer</h4>
+                    <h6>Alura</h6>
+                </li>
+                <li>
+                    <div class="education-list-element">
+                        <img src="./assets/images/usm.png" class="icono" alt="usm">
+                    </div>
+                    <h4>Ingeniero de Software</h4>
+                    <h6>Universidad Técnica Federico Santa María</h6>
+                </li>
+        </section>
         <section class="hobbies" id="hobbies">
             <h2>Hobbies</h2>
             <ul class="hobbies-list">
@@ -146,55 +226,6 @@
                     <p>Cocinar</p>
             </ul>
         </section>
-        <section class="education" id="education">
-            <h2>Educación</h2>
-            <ul class="education-list">
-                <li>
-                    <div class="education-list-element">
-                        <img src="./assets/images/alura.webp" class="icono" alt="alura">
-                    </div>
-                    <h4>Frontend Developer</h4>
-                    <h6>Alura</h6>
-                </li>
-                <li>
-                    <div class="education-list-element">
-                        <img src="./assets/images/usm.png" class="icono" alt="usm">
-                    </div>
-                    <h4>Ingeniero de Software</h4>
-                    <h6>Universidad Técnica Federico Santa María</h6>
-                </li>
-        </section>
-        <section class="projects" id="projects">
-            <h2>Proyectos</h2>
-            <ul class="projects-list">
-                <li class="projects-list-impar">
-                    <div class="projects-list-element">
-                        <img src="./assets/images/portafolio.png" alt="portafolio">
-                    </div>
-                    <div class="projects-list-element-2">
-                        <h4>Portafolio</h4>
-                        <h6>Challenge Oracle</h6>
-                        <div class="projects-list-botonera">
-                            <button class="btn-secundario" data-repo-portafolio>Repositorio</button>
-                            <button class="btn" data-demo-portafolio>Ver demo</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="projects-list-par">
-                    <div class="projects-list-element">
-                        <img src="./assets/images/encriptador.png" alt="encriptador">
-                    </div>
-                    <div class="projects-list-element-2">
-                        <h4>Encriptador de texto</h4>
-                        <h6>Challenge Oracle</h6>
-                        <div class="projects-list-botonera">
-                            <button class="btn-secundario" data-repo-encriptador>Repositorio</button>
-                            <button class="btn" data-demo-encriptador>Ver demo</button>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
         <section class="contact" id="contact">
             <div class="contact-image">
                 <img src="./assets/images/telefono.png" alt="contacto">
@@ -202,10 +233,8 @@
             <div class="contact-text">
                 <h2>Contacto</h2>
                 <p>Si tienes alguna duda, sugerencia o necesitas ayuda, no dudes en contactarme.</p>
-                <form action="https://formspree.io/f/mgjbzjfj" method="POST" class="contact-form">
-                    <input type="text" id="name" name="name" placeholder="Juan Pérez" class="contact-form-element">
+                <form action="https://formspree.io/f/xyzeedja" method="POST" class="contact-form">
                     <input type="email" id="email" name="email" placeholder="juanperez@gmail.com" class="contact-form-element">
-                    <input type="text" id="subject" name="subject" placeholder="Asunto" class="contact-form-element">
                     <textarea rows="5" id="message" name="message" placeholder="Mensaje" class="contact-form-element"></textarea>
                     <div class="contact-form-botonera">
                         <button type="submit" class="btn">Enviar Mensaje</button>
