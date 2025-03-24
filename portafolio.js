@@ -6,6 +6,7 @@ const repoGifExpert = document.querySelector("[data-repo-gif-expert]");
 const demoGifExpert = document.querySelector("[data-demo-gif-expert]");
 const repoAlurageek = document.querySelector("[data-repo-alurageek]");
 const demoAlurageek = document.querySelector("[data-demo-alurageek]");
+const demoMomentoPerfecto = document.querySelector("[data-momento-perfecto]");
 
 repoEncriptador.addEventListener("click", () => {
   window.open("https://github.com/dibacach/encriptador", "_blank");
@@ -37,4 +38,8 @@ repoAlurageek.addEventListener("click", () => {
 
 demoAlurageek.addEventListener("click", () => {
   window.open("https://dibacach.github.io/alura-geek", "_blank");
+});
+
+demoMomentoPerfecto.addEventListener("click", () => {
+  window.open("https://ventas.momentoperfecto.cl", "_blank");
 });
