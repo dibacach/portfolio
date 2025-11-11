@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Daniel Ibacache</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <nav class="header-nav">
+        <nav>
             <ul class="header-nav-list">
-                <li><a href="#about" class="boton-navegacion">Sobre mi</a></li>
-                <li><a href="#projects" class="boton-navegacion">Proyectos</a></li>
-                <li><a href="#skills" class="boton-navegacion">Habilidades</a></li>
-                <li><a href="#education" class="boton-navegacion">Formación</a></li>
-                <li><a href="#hobbies" class="boton-navegacion">Pasatiempos</a></li>
-                <li><a href="#contact" class="boton-navegacion">Contacto</a></li>
+                <li class="header-nav-list-item"><a href="#about">Sobre mi</a></li>
+                <li class="header-nav-list-item"><a href="#projects">Proyectos</a></li>
+                <li class="header-nav-list-item"><a href="#skills">Habilidades</a></li>
+                <li class="header-nav-list-item"><a href="#education">Formación</a></li>
+                <li class="header-nav-list-item"><a href="#hobbies">Pasatiempos</a></li>
+                <li class="header-nav-list-item"><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -26,30 +30,30 @@
                 <h1 class="presentation-text-title">Daniel Ibacache</h1>
                 <h2>Analista Desarrollador Senior</h2>
                 <p>Soy formado en la Universidad Técnica Federico Santa María, Chile.</p>
-                <p>Tengo más de 10 años en el desarrollo de software web, con experiencia en lenguajes de programación como JavaScript, HTML, CSS y PHP.</p>
+                <p>Tengo más de 13 años en el desarrollo de software web, con experiencia en lenguajes de programación como JavaScript, HTML, CSS y PHP.</p>
                 <p>En este momento estoy realizando la transición de mi stack tencológico hacia un desarrollo más moderno y eficiente, utilizando tecnologías como Node.js, Express y React.</p>
             </div>
         </section>
         <section class="about" id="about">
             <h2>Sobre mi</h2>
             <p>
-                Vivo con mi familia en un puebo llamado Olmué, región de Valparaíso en Chile. Me gusta la tranquilidad y la naturaleza de este lugar.
+                Vivo con mi familia en un pueblo llamado Olmué, región de Valparaíso en Chile. Me gusta la tranquilidad y la naturaleza de este lugar.
             </p>
             <p>
-                Mi pasión por la tecnología me ha llevado a buscar formación como desarrollador de software y me he dedicado a aprender y desarrollar nuevas habilidades con el trascurso de los años.
+                Mi pasión por la tecnología me ha llevado a buscar formación como desarrollador de software y me he dedicado a aprender y desarrollar nuevas habilidades con el transcurso de los años.
             </p>
             <p>
-                Mi meta es convertirme en un desarrollador muy hábil, que pueda crear software de calidad destacada con gran enfoque en la optimización de rendimiento y seguridad. También quiero mejorar mi habilidad para trabajar en equipo y colaborar con otros desarrolladores.
+                Mi meta es convertirme en un desarrollador muy hábil, capaz de crear software de gran calidad con un enfoque en la optimización de rendimiento y seguridad.
             </p>
         </section>
         <section class="projects" id="projects">
             <h2>Proyectos</h2>
             <ul class="projects-list">
-                <li class="projects-list-impar">
+                <li class="projects-list-item">
                     <div class="projects-list-element">
                         <img src="./assets/images/aluraflix.png" alt="aluraflix">
                     </div>
-                    <div class="projects-list-element-2">
+                    <div class="projects-list-content">
                         <h4>Alurafix</h4>
                         <h6>Challenge Oracle Next Education</h6>
                         <p>Sitio desarrollado en React, tipo plataforma de streaming de videos. Usa React Hooks, Context API, y JSON Server.</p>
@@ -59,18 +63,17 @@
                             <li class="technologies-item technology-css">Css module</li>
                             <li class="technologies-item technology-json">Json Server</li>
                         </ul>
-                        <br>
-                        <div class="projects-list-botonera">
-                            <button class="btn-secundario" data-repo-aluraflix>Repositorio</button>
+                        <div class="projects-list-buttons">
+                            <button class="btn-secondary" data-repo-aluraflix>Repositorio</button>
                             <button class="btn" data-demo-aluraflix>Ver demo</button>
                         </div>
                     </div>
                 </li>
-                <li class="projects-list-impar">
+                <li class="projects-list-item">
                     <div class="projects-list-element">
                         <img src="./assets/images/momento-perfecto.png" alt="momento_perfecto">
                     </div>
-                    <div class="projects-list-element-2">
+                    <div class="projects-list-content">
                         <h4>Ecommerce Momento Perfecto</h4>
                         <h6>Desarrollo freelance</h6>
                         <p>Sitio web para venta de fotografías digitales de un centro de eventos.</p>
@@ -80,17 +83,16 @@
                             <li class="technologies-item technology-css">CSS</li>
                             <li class="technologies-item technology-js">Javascript</li>
                         </ul>
-                        <br>
-                        <div class="projects-list-botonera">
+                        <div class="projects-list-buttons">
                             <button class="btn" data-momento-perfecto>Visitar sitio</button>
                         </div>
                     </div>
                 </li>
-                <li class="projects-list-impar">
+                <li class="projects-list-item">
                     <div class="projects-list-element">
                         <img src="./assets/images/gif-expert.png" alt="gif_expert">
                     </div>
-                    <div class="projects-list-element-2">
+                    <div class="projects-list-content">
                         <h4>GIF Expert</h4>
                         <h6>Curso React Fernando Herrera</h6>
                         <p>Un portal para búsqueda de gifs, utilizando API externa.</p>
@@ -98,18 +100,17 @@
                             <li class="technologies-item technology-react">React</li>
                             <li class="technologies-item technology-css">CSS</li>
                         </ul>
-                        <br>
-                        <div class="projects-list-botonera">
-                            <button class="btn-secundario" data-repo-gif-expert>Repositorio</button>
+                        <div class="projects-list-buttons">
+                            <button class="btn-secondary" data-repo-gif-expert>Repositorio</button>
                             <button class="btn" data-demo-gif-expert>Ver demo</button>
                         </div>
                     </div>
                 </li>
-                <li class="projects-list-impar">
+                <li class="projects-list-item">
                     <div class="projects-list-element">
                         <img src="./assets/images/alura-geek.png" alt="alurageek">
                     </div>
-                    <div class="projects-list-element-2">
+                    <div class="projects-list-content">
                         <h4>Alurageek</h4>
                         <h6>Challenge Oracle Next Education</h6>
                         <p>Pequeño portal para venta de artículos geek.</p>
@@ -119,18 +120,17 @@
                             <li class="technologies-item technology-js">Javascript</li>
                             <li class="technologies-item technology-json">Json Server</li>
                         </ul>
-                        <br>
-                        <div class="projects-list-botonera">
-                            <button class="btn-secundario" data-repo-alurageek>Repositorio</button>
+                        <div class="projects-list-buttons">
+                            <button class="btn-secondary" data-repo-alurageek>Repositorio</button>
                             <button class="btn" data-demo-alurageek>Ver demo</button>
                         </div>
                     </div>
                 </li>
-                <li class="projects-list-impar">
+                <li class="projects-list-item">
                     <div class="projects-list-element">
                         <img src="./assets/images/encriptador.png" alt="encriptador">
                     </div>
-                    <div class="projects-list-element-2">
+                    <div class="projects-list-content">
                         <h4>Encriptador de texto</h4>
                         <h6>Challenge Oracle Next Education</h6>
                         <p>Aplicación web sin framework para encriptar y desencriptar texto.</p>
@@ -139,9 +139,8 @@
                             <li class="technologies-item technology-css">CSS</li>
                             <li class="technologies-item technology-js">Javascript</li>
                         </ul>
-                        <br>
-                        <div class="projects-list-botonera">
-                            <button class="btn-secundario" data-repo-encriptador>Repositorio</button>
+                        <div class="projects-list-buttons">
+                            <button class="btn-secondary" data-repo-encriptador>Repositorio</button>
                             <button class="btn" data-demo-encriptador>Ver demo</button>
                         </div>
                     </div>
@@ -149,8 +148,7 @@
             </ul>
         </section>
         <section class="skills" id="skills">
-            <h2>habilidades</h2>
-
+            <h2>Habilidades</h2>
             <ul class="skills-list">
                 <li>
                     <svg role="img" class="icono" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -251,6 +249,7 @@
                     <h4>Ingeniero de Software</h4>
                     <h6>Universidad Técnica Federico Santa María (2002 - 2009)</h6>
                 </li>
+            </ul>
         </section>
         <section class="hobbies" id="hobbies">
             <h2>Pasatiempos</h2>
@@ -266,9 +265,11 @@
                 <li>
                     <img src="./assets/icons/music.svg" class="icono" alt="escuchar música">
                     <p>Escuchar música</p>
+                </li>
                 <li>
                     <img src="./assets/icons/cook.svg" class="icono" alt="cocinar">
                     <p>Cocinar</p>
+                </li>
             </ul>
         </section>
         <section class="contact" id="contact">
@@ -290,7 +291,7 @@
     </main>
     <footer class="footer">
         <p class="footer-develop"> Desarrollado por Daniel Ibacache</p>
-        <p>2025</p>
+        <p class="footer-year">2025</p>
     </footer>
     <script src="./portafolio.js"></script>
 </body>
